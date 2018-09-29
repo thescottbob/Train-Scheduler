@@ -1,0 +1,19 @@
+body,
+html {
+  height: 100%;
+  margin: auto;
+  background-image: url("http://www.omnistarfinancial.com/wp-content/uploads/2013/08/Various-Railroad-Tracks-Many-Directions2-e1438628029405.jpg");
+  background-position: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    background-color: antiquewhite;
+}
+
+.audioBox {
+    margin: auto;
+}
