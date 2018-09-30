@@ -10,19 +10,80 @@
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="logic.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" 
+    crossorigin="anonymous">
+    </script>
 </head>
 
 <body>
     <!-- Page header -->
-    <div class="container">
-        <h1 class="display-4">Find Your Train Or Go Insane</h1>
+    <div>
+        <h1 class="">Find Your Train Or Go Insane</h1>
     </div>
 
-    <!-- All abored the crazy train-->
-    <audio controls autoplay>
-        <source src="crazytrain.mp3" type="audio/mpeg">
-    </audio>
+    <div class="container">
+        <img src="https://cdn4.iconfinder.com/data/icons/transport-flat-icons-vol-1/256/17-512.png" id="trainPic" width=300px height=300px>
+    </div>
 
+    <br>
+    
+    <!-- Button which will show the user the data table and start playing "Crazy Train" -->
+    <div class="container">
+        <button id="getStarted">Get Started</button>
+    </div>
+
+    <!-- BootStrap table to hold user input -->
+    <table class="table table-dark">
+            
+            <!-- Column headers for the Train Scheduling table -->
+            <thead>
+              <tr>
+                <th scope="col">Train Name</th>
+                <th scope="col">Destination</th>
+                <th scope="col">Frequency (min)</th>
+                <th scope="col">Next Arrival</th>
+                <th scope="col">Minutes Away</th>
+              </tr>
+            </thead>
+
+            <!-- First row -->
+            <tbody>
+              <tr>
+                <th scope="row"></th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            
+              <!-- Second row -->
+              <tr>
+                <th scope="row"></th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+
+              <!-- Third row -->
+              <tr>
+                <th scope="row"></th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+
+            </tbody>
+          </table>
+
+    <!-- All abored the crazy train-->
+    <button id="audioBox">    
+        <audio id="crazytrain" src="crazytrain.mp3" loop="loop"></audio>  
+    </button>
+    
     <!-- Link to jQuery CDN -->
     <!-- <script
     src="https://code.jquery.com/jquery-3.3.1.js"
@@ -31,7 +92,7 @@
     </script> -->
 
     <!-- Link to FireBase -->
-    <!-- <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.0/firebase-app.js"></script>
     <script>
       // Initialize Firebase
       var config = {

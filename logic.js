@@ -1,12 +1,18 @@
-$(document).ready(function enableAutoplay(){
+window.onload = function() {
+    $("#crazytrain").hide();
+    $(".table").hide();
+}
 
-// Make 'Crazy Train' autoplay on page load
-        var audio = document.getElementById("crazytrain"); 
-        audio.autoplay = true;
-        audio.load();
-    });
-    
+$(document).ready(function(){
 
+    // Make 'Crazy Train' play when "Get Started" button is pressed
+    $("#getStarted").on("click", function(){
+        $(".table").show();
+        $("#crazytrain").get(0).play();
+        $("#trainPic").hide();
+        $("#getStarted").hide();
+    })   
+});
 
 
 

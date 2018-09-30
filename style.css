@@ -1,19 +1,46 @@
 body,
 html {
   height: 100%;
+  width:100%;
   margin: auto;
-  background-image: url("http://www.omnistarfinancial.com/wp-content/uploads/2013/08/Various-Railroad-Tracks-Many-Directions2-e1438628029405.jpg");
+  background-image: url("https://i.ebayimg.com/images/g/evwAAOSwKZtajX3o/s-l300.jpg");
   background-position: center;
 }
 
 h1 {
     text-align: center;
+    color: black;
+    border-radius: 25px;
+    background-color: lightcoral;
 }
 
 .container {
-    background-color: antiquewhite;
+    display: flex;
+    margin: auto;
 }
 
 .audioBox {
-    margin: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#trainPic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#getStarted {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 30px;
+    border-radius: 25px;
+    background-color: lightcoral;
+}
+
+.table {
+    width: 80%;
 }
