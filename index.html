@@ -7,10 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Insane Train</title>
     <link rel="shortcut icon" type="image/x-icon" href="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX7378735.jpg" />
-    <link rel="stylesheet" 
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     <script src="https://www.gstatic.com/firebasejs/5.0.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.0.0/firebase-database.js"></script>
@@ -109,36 +107,27 @@
     <div class="container">
 
         <!-- Add Train Name -->
-        <div class="input-group">
-            <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroup-sizing-default">Train Name</span>
-            </div>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-        </div>
+        <form>
+            <span id="trainName" class="input-group">Train Name<input id="trainName" class="input-group" type="text"></span>
+        </form>
 
         <!-- Add Train Destination -->
-        <div class="input-group">
-            <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroup-sizing-default">Destination</span>
-            </div>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-        </div>
+        <form>
+            <span id="trainDestination" class="input-group">Train Destination<input id="trainDestination" class="input-group"
+                    type="text"></span>
+        </form>
 
         <!-- Add First Train Time (HH:mm - military time) -->
-        <div class="input-group">
-            <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroup-sizing-default">First Train Time (HH:mm - military time)</span>
-            </div>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-        </div>
+        <form>
+            <span id="trainTime" class="input-group">First Train Time (HH:mm - military time)<input id="trainTime" class="input-group"
+                    type="text"></span>
+        </form>
 
         <!-- Add Frequency (min) -->
-        <div class="input-group">
-            <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroup-sizing-default">Frequency (min)</span>
-            </div>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-        </div>
+        <form>
+            <span id="trainFrequency" class="input-group">Add Frequency (min)<input id="trainFrequency" class="input-group"
+                    type="text"></span>
+        </form>
 
     </div>
 
@@ -151,7 +140,7 @@
     <div class="container">
         <audio controls class="container" id="crazytrain" src="crazytrain.mp3" loop="loop"></audio>
     </div>
-    
+
 </body>
 
 </html>
