@@ -5,8 +5,9 @@ window.onload = function() {
 
 $(document).ready(function(){
 
-    // Make 'Crazy Train' play when "Get Started" button is pressed
+    // Run the following code when "Get Started" button is pressed
     $("#getStarted").on("click", function(){
+        $("#crazytrain").show();
         $(".table").show();
         $("#crazytrain").get(0).play();
         $("#trainPic").hide();
