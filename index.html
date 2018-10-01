@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Insane Train</title>
-    <link rel="shortcut icon" type="image/x-icon" href="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX7378735.jpg"/>
+    <link rel="shortcut icon" type="image/x-icon" href="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX7378735.jpg" />
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="logic.js"></script>
 </head>
@@ -23,79 +24,138 @@
     <div class="container">
         <img src="https://cdn4.iconfinder.com/data/icons/transport-flat-icons-vol-1/256/17-512.png" id="trainPic" width=300px height=300px>
     </div>
-    
+
 
     <!-- Button which will show the user the data table and start playing "Crazy Train" when clicked-->
     <div class="container">
         <button id="getStarted"><strong>Get Started</strong></button>
-    </div> 
+    </div>
 
     <!-- BootStrap table to hold user input -->
     <div class="container">
-    <table class="table table-dark">
-            
+        <table class="table table-dark">
+
             <!-- Column headers for the Train Scheduling table -->
             <thead>
-              <tr>
-                <th scope="col">Train Name</th>
-                <th scope="col">Destination</th>
-                <th scope="col">Frequency (min)</th>
-                <th scope="col">Next Arrival</th>
-                <th scope="col">Minutes Away</th>
-              </tr>
+                <tr>
+                    <th scope="col">Current Train Schedule</th>
+                </tr>
+            </thead>
+
+            <thead>
+                <tr>
+                    <th scope="col">Train Name</th>
+                    <th scope="col">Destination</th>
+                    <th scope="col">Frequency (min)</th>
+                    <th scope="col">Next Arrival</th>
+                    <th scope="col">Minutes Away</th>
+                </tr>
             </thead>
 
             <!-- First row -->
             <tbody>
-              <tr>
-                <th scope="row"></th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-            
-              <!-- Second row -->
-              <tr>
-                <th scope="row"></th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
 
-              <!-- Third row -->
-              <tr>
-                <th scope="row"></th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
+                <!-- Second row -->
+                <tr>
+                    <th scope="row"></th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <!-- Third row -->
+                <tr>
+                    <th scope="row"></th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
 
             </tbody>
-          </table>
+        </table>
     </div>
 
-    
-    <!-- All aboard the crazy train--> 
+    <br>
+
+    <!-- Second table header (for user input) -->
     <div class="container">
-        <audio controls id="crazytrain" src="crazytrain.mp3" loop="loop"></audio> 
+        <table class="table table-dark">
+
+            <thead>
+                <tr>
+                    <th scope="col">Add Train</th>
+                </tr>
+            </thead>
+
+        </table>
+    </div>
+
+    <!-- Forms to capture user input -->
+    <div class="container">
+
+        <!-- Add Train Name -->
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">Train Name</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+
+        <!-- Add Train Destination -->
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">Destination</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+
+        <!-- Add First Train Time (HH:mm - military time) -->
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">First Train Time (HH:mm - military time)</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+
+        <!-- Add Frequency (min) -->
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">Frequency (min)</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+
+        <button class="input-group">Submit</button>
+
+    </div>
+
+    <!-- All aboard the crazy train-->
+    <div class="container">
+        <audio controls id="crazytrain" src="crazytrain.mp3" loop="loop"></audio>
     </div>
 
     <!-- Link to FireBase -->
     <script src="https://www.gstatic.com/firebasejs/5.0.0/firebase-app.js"></script>
     <script>
-      // Initialize Firebase
-      var config = {
-        apiKey: "AIzaSyD0BOd2rgmzeCIsP7mWvTRdJqD0D6nuQSY",
-        authDomain: "coolbeans-d99ed.firebaseapp.com",
-        databaseURL: "https://coolbeans-d99ed.firebaseio.com",
-        projectId: "coolbeans-d99ed",
-        storageBucket: "coolbeans-d99ed.appspot.com",
-        messagingSenderId: "1039172648944"
-      };
-      firebase.initializeApp(config);
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyD0BOd2rgmzeCIsP7mWvTRdJqD0D6nuQSY",
+            authDomain: "coolbeans-d99ed.firebaseapp.com",
+            databaseURL: "https://coolbeans-d99ed.firebaseio.com",
+            projectId: "coolbeans-d99ed",
+            storageBucket: "coolbeans-d99ed.appspot.com",
+            messagingSenderId: "1039172648944"
+        };
+        firebase.initializeApp(config);
     </script>
 
 </body>

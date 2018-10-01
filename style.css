@@ -2,7 +2,7 @@ body,
 html {
   height: 100%;
   width:100%;
-  margin: 25px;
+  margin: 10px;
   background-image: url("https://i.ebayimg.com/images/g/evwAAOSwKZtajX3o/s-l300.jpg");
   background-position: center;
 }
@@ -14,11 +14,6 @@ h1 {
     background-color: lightcoral;
     margin: auto;
     width: 45%;
-}
-
-.container {
-    display: flex;
-    margin: auto;
 }
 
 #trainPic {
@@ -37,6 +32,10 @@ h1 {
     background-color: lightcoral;
 }
 
-.table {
-    
+.centerText {
+    text-align: center;
+}
+
+.input-group {
+    display: inline-flex;
 }
