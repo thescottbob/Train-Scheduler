@@ -32,10 +32,6 @@ h1 {
     background-color: lightcoral;
 }
 
-.centerText {
-    text-align: center;
-}
-
 .input-group {
     display: inline-flex;
 }

@@ -7,9 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Insane Train</title>
     <link rel="shortcut icon" type="image/x-icon" href="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX7378735.jpg" />
+    <link rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="logic.js"></script>
 </head>
@@ -138,24 +140,24 @@
 
     <br>
 
+    <!-- Button to Submit responses and add data to the table -->
     <button class="input-group container" id="submit"><strong>Submit</strong></button>
 
-    <!-- All aboard the crazy train-->
+    <!-- 'Crazy Train' audio-->
     <div class="container">
         <audio controls class="container" id="crazytrain" src="crazytrain.mp3" loop="loop"></audio>
     </div>
 
-    <!-- Link to FireBase -->
     <script src="https://www.gstatic.com/firebasejs/5.0.0/firebase-app.js"></script>
     <script>
         // Initialize Firebase
         var config = {
-            apiKey: "AIzaSyD0BOd2rgmzeCIsP7mWvTRdJqD0D6nuQSY",
-            authDomain: "coolbeans-d99ed.firebaseapp.com",
-            databaseURL: "https://coolbeans-d99ed.firebaseio.com",
-            projectId: "coolbeans-d99ed",
-            storageBucket: "coolbeans-d99ed.appspot.com",
-            messagingSenderId: "1039172648944"
+            apiKey: "AIzaSyAkiBlFWWPLC-idyOZfDHPR3GQQkyVOaNQ",
+            authDomain: "crazytrain-e1f22.firebaseapp.com",
+            databaseURL: "https://crazytrain-e1f22.firebaseio.com",
+            projectId: "crazytrain-e1f22",
+            storageBucket: "crazytrain-e1f22.appspot.com",
+            messagingSenderId: "922265956555"
         };
         firebase.initializeApp(config);
     </script>
