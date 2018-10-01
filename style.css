@@ -39,3 +39,7 @@ h1 {
 .input-group {
     display: inline-flex;
 }
+
+#submit {
+    width: 10%;
+}
