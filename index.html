@@ -12,6 +12,8 @@
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="https://www.gstatic.com/firebasejs/5.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.0/firebase-database.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="logic.js"></script>
 </head>
@@ -147,21 +149,7 @@
     <div class="container">
         <audio controls class="container" id="crazytrain" src="crazytrain.mp3" loop="loop"></audio>
     </div>
-
-    <script src="https://www.gstatic.com/firebasejs/5.0.0/firebase-app.js"></script>
-    <script>
-        // Initialize Firebase
-        var config = {
-            apiKey: "AIzaSyAkiBlFWWPLC-idyOZfDHPR3GQQkyVOaNQ",
-            authDomain: "crazytrain-e1f22.firebaseapp.com",
-            databaseURL: "https://crazytrain-e1f22.firebaseio.com",
-            projectId: "crazytrain-e1f22",
-            storageBucket: "crazytrain-e1f22.appspot.com",
-            messagingSenderId: "922265956555"
-        };
-        firebase.initializeApp(config);
-    </script>
-
+    
 </body>
 
 </html>
