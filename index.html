@@ -36,7 +36,7 @@
     </div>
 
     <!-- BootStrap table to hold user input -->
-    <div class="container">
+    <div class="container" id="table-dark">
         <table class="table table-dark">
 
             <!-- Column headers for the Train Scheduling table -->
@@ -59,29 +59,21 @@
             <!-- First row -->
             <tbody>
                 <tr>
-                    <th scope="row"></th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>Hogwarts Express</td>
+                    <td>Hogwarts</td>
+                    <td>10080</td>
+                    <td>9:45am</td>
+                    <td>9.75</td>
                 </tr>
+
 
                 <!-- Second row -->
                 <tr>
-                    <th scope="row"></th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-
-                <!-- Third row -->
-                <tr>
-                    <th scope="row"></th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>The Night Bus</td>
+                    <td>Hogwarts</td>
+                    <td>120</td>
+                    <td>2:00am</td>
+                    <td>10</td>
                 </tr>
 
             </tbody>
@@ -108,25 +100,25 @@
 
         <!-- Add Train Name -->
         <form>
-            <span id="trainName" class="input-group">&nbsp;<strong>Train Name</strong><input id="trainName" class="input-group" type="text"></span>
+            <span class="input-group">&nbsp;<strong>Train Name</strong><input id="trainName" class="input-group" type="text" value=""></span>
         </form>
 
         <!-- Add Train Destination -->
         <form>
-            <span id="trainDestination" class="input-group">&nbsp;<strong>Train Destination</strong><input id="trainDestination" class="input-group"
-                    type="text"></span>
+            <span class="input-group">&nbsp;<strong>Train Destination</strong><input id="trainDestination" class="input-group"
+                    type="text" value=""></span>
         </form>
 
         <!-- Add First Train Time (HH:mm - military time) -->
         <form>
-            <span id="trainTime" class="input-group">&nbsp;<strong>First Train Time (HH:mm - military time)</strong><input id="trainTime" class="input-group"
-                    type="text"></span>
+            <span class="input-group">&nbsp;<strong>First Train Time (HH:mm - military time)</strong><input id="trainTime"
+                    class="input-group" type="text" value=""></span>
         </form>
 
         <!-- Add Frequency (min) -->
         <form>
-            <span id="trainFrequency" class="input-group">&nbsp;<strong>Add Frequency (min)</strong><input id="trainFrequency" class="input-group"
-                    type="text"></span>
+            <span class="input-group">&nbsp;<strong>Add Frequency (min)</strong><input id="trainFrequency" class="input-group"
+                    type="text" value=""></span>
         </form>
 
     </div>

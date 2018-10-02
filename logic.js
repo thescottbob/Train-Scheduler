@@ -18,30 +18,31 @@ firebase.initializeApp(config);
 // Get a reference to the database service
 var database = firebase.database();
 
-var trainName = [];
-var trainDestination = [];
-var trainTime = [];
-var trainFrequency = [];
+// Making variables to easily create and/or select particular HTML elements
+var newRow = $("<tr></tr>");
+var trainName = $("#trainName").val();
+var trainDestination = $("#trainDestination").val();
+var trainTime = $("#trainTime").val();
+var trainFrequency = $("#trainFrequency").val();
 
 $(document).ready(function() {
   // Run the following code when "Get Started" button is pressed
   $("#getStarted").on("click", function() {
-    // $("#crazytrain").show();
     $(".table").show();
     $(".input-group").show();
-    $("#crazytrain")
-      .get(0)
-      .play();
+    $("#crazytrain").get(0).play();
     $("#trainPic").hide();
     $("#getStarted").hide();
   });
 
   //When the Submit button is pressed
   $("#submit").on("click", function() {
+      console.log("submit")
     //Grab the values of the userInput for the Train Name, Destination, First Train Time, and Frequency and append them to the appropriate ID's
-    $("#").append(trainName)
-    $("#").append(trainDestination)
-    $("#").append(trainTime)
-    $("#").append(trainFrequency)
+    $("#table-dark").append(newRow);
+    $("#trainName").append(trainName);
+    $("#trainDestination").append(trainDestination);
+    $("#trainTime").append(trainTime);
+    $("#trainFrequency").append(trainFrequency);
   });
 });
